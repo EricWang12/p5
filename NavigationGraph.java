@@ -153,14 +153,14 @@ public class NavigationGraph implements GraphADT<Location, Path> {
 //							
 //						}
 						
-						boolean ex = false;
+						boolean exist = false;
 						for (DJvertex j : DjQ) {
 							if (j.getLocation().equals(i)) {
 								j.setTotalWeight(temp.getTotalWeight());
-								ex = true;
+								exist = true;
 							}
 						}
-						if (!ex)
+						if (!exist)
 							DjQ.add(temp);
 						
 					}
